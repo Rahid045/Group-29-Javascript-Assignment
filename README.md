@@ -1,5 +1,4 @@
-# Group-29-Javascript-Assignment
-assignment
+# Group-29-Javascript-Assignment.
 
 PROJECT TITTLE : SHOP EASY
 

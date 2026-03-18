@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header><h1>Checkout</h1></header>
+
+
+    <form id="checkoutForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="phone" placeholder="Phone Number (e.g. 070...)" required>
+        <textarea id="address" placeholder="Delivery Address" required></textarea>
+        <button type="submit">Place Order</button>
+    </form>
+
+
+    <div id="errorMessage" style="color: red;"></div>
+<footer id ="mainFooter">
+        <p>&copy; 2026 <strong>ShopEasy</strong>. All Rights Reserved.</p>
+        <p> Return Policy: Items can be returned within 7 days of delivery if they are in original condition.
+    
+    </footer>
+    <script src="javaScript/script.js"></script>
+</body>
+</html>

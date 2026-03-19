@@ -13,7 +13,7 @@ TEAM MEMBERS;    MUKISA DANIEL KIGOZI,
                 MPEIRWE NOBLES,
 
 DESCRIPTION;  
-              This project is a modern e-commerce web application created by nine dedicated individuals that enables users to shop for electronics, fashion and books through a seamless and user-friendly platform. it features product browsing, detailed item views, cart functionality, and secure checkout, along with search and category filtering for easy navigation. designed with a responsive interface and efficient products management, the system demonstrates practical web development skills in building a real-world online retail solution. 
+              This project is a modern e-commerce web application that enables users to shop for electronics, fashion and books through a seamless and user-friendly platform. it features product browsing, detailed item views, cart functionality, and secure checkout, along with search and category filtering for easy navigation. designed with a responsive interface and efficient products management, the system demonstrates practical web development skills in building a real-world online retail solution. 
               
 #HOW TO RUN/ VIEW THE PROJECT
 OPTION ONE: LIVE DEMO

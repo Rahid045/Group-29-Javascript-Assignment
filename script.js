@@ -31,7 +31,7 @@ const products = [
     { id: 29, name: "Signs To grow Up", price: 35000, category: "Books", image: "images/book1.jpg", description: "a poetic guide to beginners astronomy" },
     { id: 30, name: "The Laws Of Human Nature", price: 35000, category: "Books", image: "images/human nature.jpg", description: "New York Times Best Selling" },
     { id: 31, name: "HP Printer", price: 250000, category: "Electronics", image: "images/HP printer.jpg", description: "HP Mega Tank,Never Lets You Down" },
-    { id: 32, name: "Red Headphones", price: 45000, category: "Electronics", image: "images/red headphones.jpg", description: "8D sound with noisr cancellation" },
+    { id: 32, name: "Red Headphones", price: 45000, category: "Electronics", image: "images/red headphones.jpg", description: "8D sound with noise cancellation" },
     { id: 33, name: "C to C cable", price: 15000, category: "Electronics", image: "images/c to c cable.jpg", description: " fast Charging and file transfer USB" },
     { id: 34, name: "Sound System", price: 150000, category: "Electronics", image: "images/sound system.jpg", description: "Bluetooth and wired Home sound system" },
     { id: 35, name: "power bank", price: 50000, category: "Electronics", image: "images/power bank.jpg", description: "10000W power bank with multiple USBs" }

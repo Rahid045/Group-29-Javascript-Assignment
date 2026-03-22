@@ -48,23 +48,23 @@ let cart = JSON.parse(localStorage.getItem('shopEasy_cart')) || [];
 
 // 2. DOMContentLoaded - Entry point for all pages
 document.addEventListener('DOMContentLoaded', () => {});
-    updateCartCounter();
+    updateCartCounter(); //refresh the cart icon numder immediately
 document.addEventListener('DOMContentLoaded', () => {
     
 
     // Check which page we are on
     if (document.getElementById('productContainer')) {
-        renderProducts(products);
-        setupFilters();
+        renderProducts(products); //show all products by default
+        setupFilters(); //attach search and category listeners
     }
     
     if (document.getElementById('cartItems')) {
-        renderCart();
+        renderCart(); //generate the list of items in the cart
     }
 
 
     if (document.getElementById('checkoutForm')) {
-        handleCheckout();
+        handleCheckout(); //handle validation and payment submission
     }
 });
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderProducts(items) {
     const container = document.getElementById('productContainer');
    container.innerHTML = ''; 
-// Use innerHTML to clear
+// Use innerHTML to clear to prevent duplicates
 
 
     items.forEach(product => {
@@ -92,6 +92,7 @@ function renderProducts(items) {
 
 
 // 4. Cart Logic
+//add product to the cart or increase the quantity if it already exixts
 window.addToCart = (id) => {
     const product = products.find(p => p.id === id);
     const inCart = cart.find(item => item.id === id);
@@ -102,10 +103,10 @@ window.addToCart = (id) => {
     } else {
         cart.push({ ...product, quantity: 1 });
     }
-    syncCart();
+    syncCart(); //saves changes and updates  the UI
 };
 
-
+//generates the visual list of items currently in the user's cart
 function renderCart() {
     const cartContainer = document.getElementById('cartItems');
     const totalEl = document.getElementById('totalPrice');
@@ -133,7 +134,7 @@ function renderCart() {
     totalEl.innerText = total.toLocaleString();
 }
 
-
+//modifies quantity( adds or reduces) and also removes itmif quantity hits 0
 window.changeQty = (id, change) => {
     const item = cart.find(i => i.id === id);
     if (item) {
@@ -143,7 +144,7 @@ window.changeQty = (id, change) => {
     }
 };
 
-
+//completely removes an item from the cart array using a filter
 window.removeItem = (id) => {
     cart = cart.filter(i => i.id !== id);
     syncCart();
@@ -151,13 +152,14 @@ window.removeItem = (id) => {
 
 
 // 5. Utility Functions
+//update localStorage so that the cart persists even if the pages is refreshed
 function syncCart() {
     localStorage.setItem('shopEasy_cart', JSON.stringify(cart));
     updateCartCounter();
     if (document.getElementById('cartItems')) renderCart();
 }
 
-
+//update the small number on the cart
 function updateCartCounter() {
     const counter = document.getElementById('cartCount');
     if (counter) {
@@ -168,13 +170,14 @@ function updateCartCounter() {
 
 // 6. Filtering and Search
 function setupFilters() {
+    //listens for typing in the search bar
     document.getElementById('searchBar').addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase();
         const filtered = products.filter(p => p.name.toLowerCase().includes(query));
         renderProducts(filtered);
     });
 
-
+//listens for selection changes in the category dropdown
     document.getElementById('categoryFilter').addEventListener('change', (e) => {
         const cat = e.target.value;
         const filtered = cat === 'all' ? products : products.filter(p => p.category === cat);
@@ -185,21 +188,22 @@ function setupFilters() {
 // 7. Form Validation and Error Handling
 function handleCheckout() {
     document.getElementById('checkoutForm').addEventListener('submit', (e) => {
-        e.preventDefault();
+        e.preventDefault(); //prevent the page from refreshing on form submission
         const errorMsg = document.getElementById('errorMessage');
         
+        //check if the cart is empty before submission
         try {
            if (cart.length === 0) throw new Error("Empty cart during checkout!");
-            
+            //basic email formart check
             const email = document.getElementById('email').value;
            if (!email.includes('@')) throw new Error("Email format is valid check failed.");
 
-
+            //successfull scenario
             alert("Payment processed! Thank you for shopping at ShopEasy.");
-            localStorage.clear();
-            window.location.href = 'index.html';
+            localStorage.clear(); //empty the storage
+            window.location.href = 'index.html';  // redirect to home
         } catch (error) {
-           errorMsg.innerText = error.message;
+           errorMsg.innerText = error.message; //display error message
         }
     });
 }

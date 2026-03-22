@@ -34,7 +34,11 @@ const products = [
     { id: 32, name: "Red Headphones", price: 45000, category: "Electronics", image: "images/red headphones.jpg", description: "8D sound with noise cancellation" },
     { id: 33, name: "C to C cable", price: 15000, category: "Electronics", image: "images/c to c cable.jpg", description: " fast Charging and file transfer USB" },
     { id: 34, name: "Sound System", price: 150000, category: "Electronics", image: "images/sound system.jpg", description: "Bluetooth and wired Home sound system" },
-    { id: 35, name: "power bank", price: 50000, category: "Electronics", image: "images/power bank.jpg", description: "10000W power bank with multiple USBs" }
+    { id: 35, name: "power bank", price: 50000, category: "Electronics", image: "images/power bank.jpg", description: "10000W power bank with multiple USBs" },
+    { id :36, name: "Kalu heels", price: 45000, category: "Fashion", image: "images/13.jpeg", description: "Blends office looks"},
+    { id :37, name: "Glass heels", price: 50000, category: "Fashion", image: "images/14.jpeg", description: "Comfort meets style"},
+    { id :38, name: "Men sandals", price: 45000, category: "Fashion", image: "images/17.jpeg", description: " Available in all colors"},
+    { id :39, name: "Hermes", price: 48000, category: "Fashion", image: "images/23.jpeg", description: "Comfort meets style"}
 
 ];
 

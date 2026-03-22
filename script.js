@@ -43,7 +43,7 @@ const products = [
 ];
 
 
-// 1. Initialize Cart using localStorage
+//1. Initialize Cart using localStorage
 let cart = JSON.parse(localStorage.getItem('shopEasy_cart')) || [];
 
 

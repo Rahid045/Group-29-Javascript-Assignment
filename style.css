@@ -24,7 +24,21 @@ header,footer {
     top: 0;
     z-index: 1000;
 }
-
+.brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  /*add space between logo and text*/
+}
+.logo {
+   width: 80px;
+   height: auto;
+}
+.brand h1{
+    margin: 0; /* remove  default spacing around the text*/
+    font-size: 24px;
+}
 
 nav input, nav select {
     padding: 8px;

@@ -77,7 +77,11 @@ button {
 }
 
 
-button:hover { background-color: #219150; }
+button:hover { 
+    background-color: #219150;
+    transform: translateY(-2px);
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+}
 
 
 .remove-btn { background-color: #e74c3c; }

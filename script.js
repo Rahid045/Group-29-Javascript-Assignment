@@ -1,4 +1,4 @@
-﻿// PRODUCT DATA
+﻿//PRODUCT DATA
 const products = [
     { id: 1, name: "Laptop Pro", price: 1800000, category: "Electronics", image: "images/laptop.avif", description: "High-performance laptop" },
     { id: 2, name: "Smartphone X", price: 1500000, category: "Electronics", image: "images/smartphone.jpg", description: "Latest smartphone" },

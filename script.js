@@ -21,7 +21,7 @@ const products = [
     { id: 19, name: "Adidas", price: 45000, category: "Fashion", image: "images/59.jpeg", description: "Comfort meets style" },
     { id: 20, name: "Heels", price: 45000, category: "Fashion", image: "images/16.jpeg", description: "Comfort meets style" },
     { id: 21, name: "Sandals", price: 25000, category: "Fashion", image: "images/15.jpeg", description: "Comfort meets style" },
-    { id: 22, name: "Atomic Habits", price: 35000, category: "Boooks", image: "images/Habits.jpg", description: "An Easy And proven way to build good habits " },
+    { id: 22, name: "Atomic Habits", price: 35000, category: "Books", image: "images/Habits.jpg", description: "An Easy And proven way to build good habits " },
     { id: 23, name: "It Ends With us", price: 35000, category: "Books", image: "images/collen hoover.jpg", description: "A book about a relationship with ups and downs " },
     { id: 24, name: "Ikigai", price: 30000, category: "Books", image: "images/Ikigai.jpg", description: "The Japanese secret To A Long And Happy Life" },
     { id: 25, name: "And then i Chose Myself", price: 35000, category: "Books", image: "images/chose myself.jpg", description: "101 reminders to heal, rise and shine" },
@@ -44,14 +44,19 @@ const products = [
 
 
 //1. Initialize Cart using localStorage
-let cart = JSON.parse(localStorage.getItem('shopEasy_cart')) || [];
+let cart = [];
 
 
 // 2. DOMContentLoaded - Entry point for all pages
-document.addEventListener('DOMContentLoaded', () => {});
-    updateCartCounter();
-document.addEventListener('DOMContentLoaded', () => {
-    
+ 
+     const productsContainer = document.getElementById('productsContainer');
+        const cartContainer = document.getElementById('cartContainer');
+        const cartCount = document.getElementById('cartCount');
+        const cartTotal = document.getElementById('cartTotal');
+        const cartSummary = document.getElementById('cartSummary');
+        const emptyCart = document.getElementById('emptyCart');
+        const toast = document.getElementById('toast');
+        const checkoutSummary = document.getElementById('checkoutSummary');
 
     // Check which page we are on
     if (document.getElementById('productContainer')) {

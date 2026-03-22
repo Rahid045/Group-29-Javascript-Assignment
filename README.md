@@ -20,7 +20,7 @@ The system is built with a responsive and user-friendly interface, ensuring acce
 #HOW TO RUN/ VIEW THE PROJECT
 OPTION ONE: LIVE DEMO
 The project is hosted live on GitHub Pages. You can view it here by clicking this link:
-https://rahid045.github.io/Group-29-Javascript-Assignment/
+https://ciara956.github.io/Group-29-Javascript-Assignment/
 
 OPTION TWO:RUNNING IT LOCALLY 
 1.Clone the repository. Open your terminal  or command prompt and run 'git clone https://github.com/Rahid045/Group-29-Javascript-Assignment.git'

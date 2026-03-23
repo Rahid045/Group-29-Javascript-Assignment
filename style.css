@@ -12,6 +12,13 @@ a{
 }
 footer p{
      color: rgb(0, 0, 0);
+     .links{
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s;
+     }
 }
 header,footer {
     background: linear-gradient( rgb(214, 214, 243), rgb(76, 73, 137) );

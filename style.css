@@ -26,11 +26,16 @@ footer p{
     justify-content: center;
     gap: 15px;
 .links a{
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
     transition: color 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
 }
 
 }

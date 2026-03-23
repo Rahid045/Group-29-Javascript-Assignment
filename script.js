@@ -47,11 +47,9 @@ let cart = JSON.parse(localStorage.getItem('shopEasy_cart')) || [];
 
 
 // 2. DOMContentLoaded - Entry point for all pages
-document.addEventListener('DOMContentLoaded', () => {});
-    updateCartCounter(); //refresh the cart icon numder immediately
 document.addEventListener('DOMContentLoaded', () => {
+    updateCartCounter(); //refresh the cart icon numder immediately
     
-
     // Check which page we are on
     if (document.getElementById('productContainer')) {
         renderProducts(products); //show all products by default

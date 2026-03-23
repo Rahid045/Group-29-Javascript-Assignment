@@ -20,6 +20,17 @@ footer p{
         transition: color 0.3s;
      }
 }
+.links{
+    margin-top: 10px;
+.links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+}
 header,footer {
     background: linear-gradient( rgb(214, 214, 243), rgb(76, 73, 137) );
     color: white;

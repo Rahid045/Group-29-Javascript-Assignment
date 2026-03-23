@@ -61,7 +61,7 @@ footer p{
 header,footer {
     background: linear-gradient( rgb(214, 214, 243), rgb(76, 73, 137) );
     color: white;
-    padding: 1rem 5%;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

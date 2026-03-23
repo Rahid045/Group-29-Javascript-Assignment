@@ -22,6 +22,9 @@ footer p{
 }
 .links{
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 .links a{
     color: white;
     text-decoration: none;
